@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>	
+    <meta charset="UTF-8"> 
+    <meta name="author" content="Frank Gößwein">
+	<title>Hello World</title>	
+	
+	<!--Angularjs 1.6-->
+	<script src="node_modules/angular/angular.js"></script>	
+
+	<!--lodash-->
+	<script src="node_modules/lodash/lodash.min.js"></script>	
+	
+	<!--own scripts-->
+	<script src="scripts/HelloWorld.js"></script>		
+</head>
+
+
+<body ng-app="AppHelloWorld" >
+  	
+    <div ng-controller="CtrHelloWorld">      		
+		<label>Hello World</label>
+		
+		<table>
+			<tr ng-repeat="x in users">
+ 			  <td>{{ x.id }}</td>
+			  <td>{{ x.name }}</td>
+			  <td>{{ x.profession }}</td>
+			</tr>
+		  </table>	
+		  
+		  <button ng-click="AddUser()">AddUser</button>
+		  <button ng-click="DeleteUser()">DeleteUser</button>
+		  <button ng-click="DeleteTrace2()">DeleteTrace2</button>		  
+	</div>  
+</body>
+
+</html>
