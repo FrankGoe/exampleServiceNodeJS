@@ -1,20 +1,26 @@
 {
-  "name": "exampleservice",
+  "name": "exampleservicenodejs",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "dependencies": {
-    "angular": "^1.6.6",
-    "body-parser": "^1.18.2",
-    "express": "^4.16.2",
-    "file-system": "^2.2.2",
-    "requireg": "^0.1.7"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FrankGoe/exampleServiceNodeJS.git"
+  },
   "author": "Frank Gößwein",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FrankGoe/exampleServiceNodeJS/issues"
+  },
+  "homepage": "https://github.com/FrankGoe/exampleServiceNodeJS#readme",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "file-system": "^2.2.2"
+  }
 }
